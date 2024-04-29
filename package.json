@@ -1,0 +1,21 @@
+{
+  "name": "rbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend": "cd client && npm start",
+    "start:backend": "cd server && nodemon server.js",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/icons-material": "^5.15.15",
+    "@mui/x-data-grid": "^7.3.0",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
